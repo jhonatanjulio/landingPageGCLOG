@@ -1,13 +1,93 @@
 /* MEDIA QUERIE TABLET */
 
-/* main */
+
 @media (max-width: 1200px) {
+    /* main */
     .main-container {
         flex-direction: column;
         justify-content: center;
         gap: 5vh;
+        margin: 17vh auto;
     }
     
+    .text-main {
+        max-width: 80vw;
+    }
+
+    .text-main h1 {
+        font-size: 7vw;
+        text-align: center;
+    }
+
+    .text-main p {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    #btn-main {
+        width: 35vw;
+        font-size: 3.5vw;
+        align-self: center;
+    }
+
+    #background-main {
+        max-width: 70vw;
+    }
+
+    /* sobre */
+    .article-container {
+        gap: 10vh;
+    }
+
+    .article-1, .article-2 {
+        flex-direction: column;
+        gap: 10vh;
+    }
+
+    #img-entregador {
+        width: 50vw;
+    }
+    
+    #img-entregadora{
+        order: 0;
+        width: 53vw;
+    }
+
+    .text-article {
+        order: 1;
+        width: 75vw;
+    }
+
+    .text-article h2 {
+        font-size: 5.5vw;
+        text-align: center;
+    }
+
+    .text-article p {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    #btn-article {
+        width: 35vw;
+        font-size: 3.5vw;
+        align-self: center;
+        margin: auto;
+    }
+
+    .article-container {
+        margin: 15vh 0;
+    }
+}
+
+@media (max-width: 1200px) and (orientation: landscape) { /* tablet deitado */
+    /* main */
+    .main-container {
+        flex-direction: column;
+        justify-content: center;
+        margin: 15vh auto;
+    }
+
     .text-main {
         max-width: 70vw;
     }
@@ -28,40 +108,51 @@
         align-self: center;
     }
 
-    #background-main {
-        max-width: 60vw;
-    }
-}
-
-/* tablet deitado */
-@media (max-width: 1200px) and (orientation: landscape) {
-    .main-container {
+    /* sobre */
+    .article-1, .article-2 {
         flex-direction: column;
-        justify-content: center;
-        margin: 15vh auto;
+    }
+
+    .article-2 img {
+        order: 0;
+    }
+
+    .article-2 .text-article {
+        order: 1;
+    }
+
+    #img-entregador {
+        width: 45vw;
     }
     
-    .text-main {
-        max-width: 60vw;
+    #img-entregadora{
+        order: 0;
+        width: 48vw;
     }
 
-    .text-main h1 {
+    .text-article {
+        order: 1;
+        width: 60vw;
+    }
+
+    .text-article h2 {
         font-size: 4vw;
         text-align: center;
     }
 
-    .text-main p {
-        font-size: 1.7vw;
+    .text-article p {
+        font-size: 2vw;
         text-align: center;
     }
 
-    #btn-main {
+    #btn-article {
         width: 25vw;
         font-size: 2.6vw;
         align-self: center;
+        margin: auto;
     }
 
-    #background-main {
-        max-width: 50vw;
+    .article-container {
+        margin: 20vh 0;
     }
 }
