@@ -1,0 +1,67 @@
+/* MEDIA QUERIE TABLET */
+
+/* main */
+@media (max-width: 1200px) {
+    .main-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 5vh;
+    }
+    
+    .text-main {
+        max-width: 70vw;
+    }
+
+    .text-main h1 {
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .text-main p {
+        font-size: 2.2vw;
+        text-align: center;
+    }
+
+    #btn-main {
+        width: 25vw;
+        font-size: 2.6vw;
+        align-self: center;
+    }
+
+    #background-main {
+        max-width: 60vw;
+    }
+}
+
+/* tablet deitado */
+@media (max-width: 1200px) and (orientation: landscape) {
+    .main-container {
+        flex-direction: column;
+        justify-content: center;
+        margin: 15vh auto;
+    }
+    
+    .text-main {
+        max-width: 60vw;
+    }
+
+    .text-main h1 {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .text-main p {
+        font-size: 1.7vw;
+        text-align: center;
+    }
+
+    #btn-main {
+        width: 25vw;
+        font-size: 2.6vw;
+        align-self: center;
+    }
+
+    #background-main {
+        max-width: 50vw;
+    }
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> <!-- styles bootstrap -->
+    <link rel="stylesheet" href="./css/styles.css"> <!-- todos os estilos desktop -->
+    <link rel="stylesheet" href="./css/responsividade.css"><!-- responsividade -->
+</head>
+<body class="">
+    <!-- header offcanva do bootstrap -->
+    <header>
+            <nav class="navbar navbar-expand-lg fixed-top bg-light bg-opacity-50">
+                <div class="container-fluid d-flex justify-content-around" id="nav-container">
+                    <a href="#" class="navbar-brand">
+                        <img id="logo" src="./img/logotipo-gclog-sem-margem.png" alt="Logotipo GCLog Transportes">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas sidebar offcanvas-start flex-grow-0" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                        <div class="offcanvas-header border-bottom">
+                            <a href="#" class="navbar-brand justify-content-center">
+                                <img id="logo" src="./img/logotipo-gclog-sem-margem.png" alt="Logotipo GCLog Transportes">
+                            </a>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul id="navbar-links" class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link cor-link" aria-current="page" href="#">Início</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link cor-link" href="#">Sobre nós</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link cor-link" href="#">Contato</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav> <!-- nav -->
+    </header> <!-- header -->
+
+    <main id="inicio"> <!-- conteudo principal/home -->
+        <div class="main-container">
+            <div class="text-main">
+                <h1>GCLog: Soluções de Logística Eficientes para sua Empresa</h1>
+                <p>Descubra a excelência em serviços de motoboy e entregas em São Paulo com a GCLog Transportes. Com mais de uma década de experiência na cidade, nossa empresa domina cada aspecto do setor, garantindo um atendimento de primeira linha ao cliente.</p>
+                <button id="btn-main" type="button">Entre em Contato</button>
+            </div>
+            <img id="background-main" src="./img/background-home.png" alt="Imagem ilustrativa: caixas de encomenda, entregadores e mapas">
+        </div>
+    </main> <!-- main -->
+
+    <article id="sobre"> <!-- conteúdo sobre nós -->
+        <!-- divisor svg da main -->
+        <div class="article-content">
+            <svg id="divisor-main" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 200" fill="none">
+                <path d="M1400 169.581C852.522 209.801 545.949 210.477 0 169.581V0H1400V169.581Z" fill="white"/>
+            </svg>
+    
+            <div class="article-container">
+                <div class="article-1">
+                    <img id="img-entregador" src="./img/entregador.png" alt="Imagem ilustrativa: entregador assinando entrega">
+                    <div class="text-article">
+                        <h2>A GCLog - sua parceira confiável em logística!</h2>
+                        <p>Na GCLog, primamos pela excelência no transporte de produtos sensíveis e pela entrega ágil em São Paulo. Nossa abordagem única combina tecnologia de ponta com um compromisso inabalável com a segurança e a satisfação do cliente. </p>
+                        <p>Nossa equipe dedicada compartilha os valores fundamentais da GCLog, garantindo um serviço alinhado com a sua missão, visão e valores. Cada entrega é tratada com cuidado e eficiência, impulsionada pela nossa paixão pela excelência.</p>
+                    </div>
+                </div>
+                <div class="article-2">
+                    <div class="text-article">
+                        <h2>Na GCLog, simplificamos a logística para empresas, lojas físicas e grandes e-commerces em todo o Brasil</h2>
+                        <p>Oferecemos o melhor custo-benefício do mercado de envios, garantindo qualidade excepcional e uma experiência livre de complicações, <strong>por apenas R$12,99 (consulte sua região)</strong>.</p>
+                        <p>Nosso compromisso é coletar e entregar suas encomendas com segurança e rapidez, para que você tenha mais tempo para se dedicar ao que realmente importa: seu negócio e seus clientes.</p>    
+                        <p>Pronto para simplificar sua logística? Clique abaixo e descubra como a GCLog pode impulsionar o seu sucesso!</p>
+                        <button id="btn-article" type="button">Descubra Agora!</button>
+                    </div>
+                    <img id="img-entregadora" src="./img/entregadora.png" alt="Imagem ilustrativa: entregadora carregando caixas">
+                </div>
+            </div>
+        </div>
+
+    </article> <!-- article -->
+
+    <section id="contato"> <!-- conteúdo contato/formulario -->
+        <div class="contato-container">
+            <h3>Contato</h3>
+            <div class="formulario-content">
+                <form id="form" action="" method="post">
+                    <div class="input">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="input">
+                        <label for="email">E-mail:</label>
+                        <input type="text" id="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <div class="input">
+                        <label for="mensagem">Mensagem:</label> 
+                        <textarea id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                    </div>
+                    <div class="input">
+                        <input id="submit" class="btn-form" type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section> <!-- section -->
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="redes-sociais">
+                <span class="linha"></span>
+                <div class="img-redes">
+                    <a href="https://www.instagram.com/gclogentregas/">
+                        <img src="./img/redes/icon-instagram.png" alt="Link GCLog no Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/p/GCLOG-Empregadores-100068550697168/">
+                        <img src="./img/redes/icon-facebook.png" alt="Link GCLog no Facebook">
+                    </a>
+                </div>
+                <span class="linha"></span>
+            </div>
+            <div class="logo-copyright">
+                <img src="./img/logotipo-gclog-sem-margem.png" alt="Logotipo GCLog Transportes">
+                <span id="copyright">Todos os direitos reservados &copy; GCLog, 2024.</span>
+                <span>Desenvolvido por github.com/jhonatanjulio</span>
+            </div>
+        </div>
+    </footer> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> <!-- script bootstrap -->
+</body>
+</html>
