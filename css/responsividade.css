@@ -267,3 +267,10 @@
         font-size: 2vw;
     }
 }
+
+/* MEDIA QUERIE CELULAR DEITADO */
+@media (max-height: 720px) {
+    .main-container {
+        margin: 25vh auto;
+    }
+}
