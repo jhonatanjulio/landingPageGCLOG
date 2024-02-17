@@ -91,22 +91,26 @@
         <div class="contato-container">
             <h3>Contato</h3>
             <div class="formulario-content">
-                <form id="form" action="" method="post">
+                <form id="form" action="https://formsubmit.co/2daca6cab976f4f39ca5fc9e4ddf9ba5" method="POST">
+                    <!-- <input type="hidden" name="_next" value="./"> adicionar aqui depois o link da página com a rota /index.html para redirecionar para a própria página após o envio do formulário--> 
                     <div class="input">
                         <label for="name">Nome:</label>
-                        <input type="text" id="name" placeholder="Digite seu nome" required>
+                        <input type="text" id="name" name="nome" placeholder="Digite seu nome" required>
                     </div>
                     <div class="input">
                         <label for="email">E-mail:</label>
-                        <input type="text" id="email" placeholder="Digite seu e-mail" required>
+                        <input type="text" id="email" name="email" placeholder="Digite seu e-mail" required>
                     </div>
                     <div class="input">
                         <label for="mensagem">Mensagem:</label> 
-                        <textarea id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
                     </div>
                     <div class="input">
                         <input id="submit" class="btn-form" type="submit" value="Enviar">
                     </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
+                    
                 </form>
             </div>
         </div>
