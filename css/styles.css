@@ -260,6 +260,13 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 80vw;
+}
+
+.upper-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
 }
 
 .img-redes {
@@ -273,19 +280,20 @@ footer {
     width: 3vw;
 }
 
-.logo-copyright {
+.copyright-texto {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1vh;
 }
 
-.logo-copyright > span {
+.copyright-texto > span {
     font-size: 1vw;
 }
 
-.logo-copyright > img {
+#logo-footer {
     width: 10vw;
+    align-self: center;
 }
 
 #copyright {
@@ -295,6 +303,6 @@ footer {
 /* estilizando as linhas laterais das redes sociais */
 .linha {
     background-color: var(--white);
-    width: 80vw;
+    width: 100%;
     height: 1px;
 }

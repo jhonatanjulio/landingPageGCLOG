@@ -2,7 +2,7 @@
 
 
 @media (max-width: 1200px) {
-    /* main */
+    /*----------- main -----------*/
     .main-container {
         flex-direction: column;
         justify-content: center;
@@ -30,11 +30,16 @@
         align-self: center;
     }
 
+    #btn-main:hover, #btn-article:hover {
+        width: 36vw;
+        font-size: 3.6vw;
+    }
+
     #background-main {
         max-width: 70vw;
     }
 
-    /* sobre */
+    /*----------- sobre -----------*/
     .article-container {
         gap: 10vh;
     }
@@ -78,6 +83,74 @@
     .article-container {
         margin: 15vh 0;
     }
+
+    /*----------- contato -----------*/
+    .contato-container {
+        margin: 10vh 0;
+    }
+
+    .contato-container > h3 {
+        font-size: 5.5vw;
+    }
+
+    .input {
+        font-size: 3vw;
+    }
+
+    .input input[type=text], .input input[type=email], .input textarea {
+        font-size: 2.8vw;
+    }
+
+    .formulario-content {
+        width: 60vw;
+    }
+
+    .input input[type=submit] {
+        width: 25vw;
+        font-size: 3.5vw;
+    }
+
+    .input input[type=submit]:hover {
+        width: 26vw;
+        font-size: 3.6vw;
+    }
+
+    /*----------- footer tablet -----------*/
+    .linha {
+        display: none;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .upper-section {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .img-redes {
+        order: 0;
+    }
+
+    .redes-sociais {
+        width: auto;
+        order: 1;
+    }
+
+    .img-redes > a > img{
+        width: 7vw;
+    }
+
+    #logo-footer {
+        width: 25vw;
+    }
+
+    .copyright-texto > span {
+        font-size: 2.5vw;
+    }
 }
 
 @media (max-width: 1200px) and (orientation: landscape) { /* tablet deitado */
@@ -106,6 +179,11 @@
         width: 25vw;
         font-size: 2.6vw;
         align-self: center;
+    }
+    
+    #btn-main:hover, #btn-article:hover {
+        width: 27vw;
+        font-size: 2.7vw;
     }
 
     /* sobre */
@@ -154,5 +232,38 @@
 
     .article-container {
         margin: 20vh 0;
+    }
+
+     /*----------- footer tablet landscape -----------*/
+    .linha {
+        display: flex;
+    }
+
+    .upper-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+        align-items: none;
+    }
+
+    .img-redes {
+        order: none;
+    }
+
+    .redes-sociais {
+        order: 0;
+        width: 80vw;
+    }
+
+    .img-redes > a > img{
+        width: 5vw;
+    }
+
+    #logo-footer {
+        width: 18vw;
+    }
+
+    .copyright-texto > span {
+        font-size: 2vw;
     }
 }
